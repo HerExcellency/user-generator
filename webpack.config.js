@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-  mode: 'development',
+  // mode: 'development',
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
@@ -15,6 +15,9 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
+          options:{
+            presets: ['@babel/preset-react'],
+          }
         },
       },
       {
