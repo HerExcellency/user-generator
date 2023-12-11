@@ -1,0 +1,63 @@
+.body-style{
+    width: 80vw;
+    display: grid;
+    margin: 50px auto;
+    h1{
+        text-align: center;
+        color: #333333;
+    }
+    .inputs{
+        display: flex;
+        // width: 90vw;
+
+        .inputDiv{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+            width: 50%;
+            margin: 10px;
+        select{
+            padding: 9px 12px;
+            width: 60%;
+            border: 1px solid #ddd;
+        }
+        label{
+            margin-right: 9px;
+            font-weight: bold;
+        }
+        }
+    }
+    .userBlock{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin-top: 27px;
+        justify-content: space-around;
+
+        .personCard{
+            display: grid;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            // width: 30vh;
+            // margin-bottom: 30px;
+            padding: 10px 17px;
+            margin: 15px 1px;
+            p{
+                margin-top: 1px;
+                margin-bottom: 1px;
+            }
+        }
+        img{
+            // width: 200px;
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+    .footer{
+        margin:100px  auto 20px;
+        color: #663399;
+    }
+}
